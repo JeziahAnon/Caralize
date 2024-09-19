@@ -126,7 +126,7 @@ body{
         justify-content: space-evenly;
     }
 
-    .inactive_pagepart_ident {
+    .page_part {
         width: 80%;
         height: 13%;
         background-color: rgba(0, 0, 0, 0.09);
@@ -134,11 +134,18 @@ body{
         opacity: 0,09;
     }
 
-    .active_pagepart_ident {
-        width: 80%;
-        height: 13%;
+    .page_part.active {
         background-color: rgba(231, 72, 51, 1);
-        border-radius: 60%;
-        opacity: 0,9;
+        transition: all 0.3s ease;
+    }
+
+    .page_part.active.scrolling_up {
+        transform: translateY(-10px);
+        background-color: red; 
+    }
+
+    .page_part.active.scrolling_down {
+        transform: translateY(10px);
+        background-color: red; 
     }
 }
