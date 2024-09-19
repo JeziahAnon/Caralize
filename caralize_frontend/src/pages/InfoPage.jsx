@@ -1,4 +1,5 @@
 import VideoPageHeader from '../pages/InfoPageComponents/VideoPageHeader.jsx'
+import OldTimer from '../assets/oldtimer.jpg';
 import './Styles/InfoStyle.css'; 
 import VideoPageNavbar from '../pages/InfoPageComponents/VideoPageNavbar.jsx'
 import CompanyNameStrip from '../pages/InfoPageComponents/VideoPageNameStrip.jsx'
@@ -14,7 +15,15 @@ export default function InfoPage() {
             <VideoPageHeader />
             <VideoPageNavbar />
             <CompanyNameStrip />
-            <ProgressBar/>
+            <ProgressBar />
+            <div className='info_container'>
+                <div className='infobox'>
+                    <img src={OldTimer} id='oldtimer_img'></img>
+                    <div className='infobox text_container'>
+                        <span>Im a text span with certainly important information to display</span>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }
