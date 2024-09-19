@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#root {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1280px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1440px) {
+    body {
+        font-size: 24px;
+        background-color: #EAE4DD;
+    }
+
+    #root {
+        width: 100vw;
+        height: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #header_video_container {
+        height: 28vh;
+        width: 100%;
+        display: flex;
+        overflow: hidden;
+        position: relative;
+        background-color: yellow;
+    }
+
+    #header_video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: 1;
+        flex: 1;
+    }
+
+    #menu_indicator {
+        height: 30%;
+        width: 25%;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        right: 0;
+        bottom: 0;
+        border-top-left-radius: 400px;
+        border-bottom: solid;
+        border-color: lightgray;
+    }
+
+    #navbar_container {
+        width: 100vw;
+        height: 5vw;
+        background-color: white;
+        border-top: solid;
+        border-bottom: solid;
+        border-color: lightgray;
+        border-width: 0.5px;
+        box-shadow: 0px 3px 8px 5px rgba(0,0,0,0.27);
+    }
+
+
+    #compamy_name_strip {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 4vh;
+
+    }
+
+    #compamy_name_container {
+        background-color: #e74833;
+        color: white;
+        /*       margin-top: 7vh;*/
+        margin-left: 6%;
+        margin-right: 0;
+        display: flex;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(10deg) rotateX(-40deg);
+        box-shadow: -7px 10px 5px 0px rgba(145,56,56,0.75);
+        -webkit-box-shadow: -7px 10px 5px 0px rgba(145,56,56,0.75);
+        -moz-box-shadow: -7px 10px 5px 0px rgba(145,56,56,0.75);
+    }
+
+    #company_name {
+        font-size: 5vw;
+        font-weight: bold;
+        display: block;
+        text-align: center;
+    }
+
+    #breaking_line_infopage {
+        width: 65%;
+        margin-left: 3%;
+        border: none;
+        border-top: 2px solid black;
+    }
+
+    .progress_bar_container {
+        width: 30px;
+        height: 180px;
+        position: absolute;
+        right: 1.25vw;
+        top: 50vh;
+        border-radius: 35px;
+        background-color: rgba(0, 0, 0, 0.09);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: 1000;
+    }
+
+    .page_part {
+        width: 80%;
+        height: 13%;
+        background-color: rgba(0, 0, 0, 0.09);
+        border-radius: 60%;
+        opacity: 0,09;
+    }
+
+    .page_part.active {
+        background-color: rgba(231, 72, 51, 1);
+        transition: all 0.3s ease;
+    }
+
+    .page_part.active.scrolling_up {
+        transform: translateY(-10px);
+        background-color: red; 
+    }
+
+    .page_part.active.scrolling_down {
+        transform: translateY(10px);
+        background-color: red; 
+    }
+
+    .info_container {
+        width: 100vw;
+        height: auto;
+        z-index: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .infobox {
+        height: 40vh;
+        width: 75vw;
+        background-color: #ffffff;
+        margin-left: 5vw;
+        margin-top: 3vh;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+
+    .infobox.text_container {
+        height: 85%;
+        width: 50%;
+        background-color: #e74833;
+        margin-bottom: 2.5vh;
+        margin-right: 0;
+        margin-left: 0;
+        color: white;
+        -webkit-box-shadow: none;
+        box-shadow: none
+    }
+
+    #oldtimer_img {
+        height: 90%;
+        width: 30vw;
+        margin-right: 5vh;
+        border-radius: inherit;
+        -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+        box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+    }
+}
