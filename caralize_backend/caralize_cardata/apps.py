@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class CaralizeBackendConfig(AppConfig):
+class CaralizeCardataConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'caralize_backend'
+    name = 'caralize_cardata'
